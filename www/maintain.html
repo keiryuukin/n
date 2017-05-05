@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約 保養服務 &gt; 年高家電管家</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/comm.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div id="maintain" class="page-inner">
+        <header class="b-center">
+            <h2>預約 保養服務</h2>
+            <a class="btn-back" href="javascript:window.history.back();"><span></span></a>
+        </header>
+        <nav class="nav-maintain">
+            <ul>
+                <li id="basic" class="active">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-1.png" alt=""></span><span class="text">基本資料</span>
+                    </div>
+                </li>
+                <li id="address">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-2.png" alt=""></span><span class="text">服務地址</span>
+                    </div>
+                </li>
+                <li id="count">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-3.png" alt=""></span><span class="text">清洗數量</span>
+                    </div>
+                </li>
+                <li id="appointment">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-4.png" alt=""></span><span class="text">預約時間</span>
+                    </div>
+                </li>
+                <li id="upload">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-5.png" alt=""></span><span class="text">上傳照片</span>
+                    </div>
+                </li>
+                <li id="others">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-6.png" alt=""></span><span class="text">其他服務</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="home active" data-name="home">
+                <h3 class="title">空調冷暖氣 清洗保養收費方式</h3>
+                <ul class="tabs clearfix"></ul>
+                <ul class="prods">
+                    <!-- <li>
+                        <div class="banner">
+                            <div class="bg">
+                                <img src="img/systems/banner-windowcooler.jpg">
+                                <div class="intro">
+                                    <img src="img/systems/icon-windowcooler.png">
+                                    <h4>窗型冷氣</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="evaluate clearfix">
+                            <div class="cost">
+                                <dl></dl>
+                                <p class="note">水冷主機清洗不包含管路</p>
+                            </div>
+                            <div class="time">
+                                <dl></dl>
+                                <p class="note">特殊環境需追加時間以現場狀況為主</p>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li>
+                        <div class="banner">
+                            <div class="bg">
+                                <img class="prod-banner" src="img/systems/banner-windowcooler.jpg">
+                                <div class="intro">
+                                    <img class="prod-icon" src="img/systems/icon-windowcooler.png">
+                                    <h4 class="prod-name">窗型冷氣</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="evaluate clearfix">
+                            <div class="prod-cost">
+                                <dl></dl>
+                                <p class="note-cost"></p>
+                            </div>
+                            <div class="prod-time">
+                                <dl></dl>
+                                <p class="note-time"></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="basic form" data-name="basic">
+                <div class="block">
+                    <form action="">
+                        <ul class="form-text clearfix">
+                            <li>
+                                <input id="form-name" type="text" placeholder="請填寫聯絡人姓名" data-type="input" data-default="請填寫聯絡人姓名" data-target="form-name" required>
+                            </li>
+                            <li>
+                                <input id="form-tel" type="number" placeholder="請填寫聯絡人電話" data-type="input" data-default="請填寫聯絡人電話" data-target="form-tel" required>
+                            </li>
+                            <li>
+                                <input id="form-address" type="text" placeholder="請填寫聯絡人地址" data-type="input" data-default="請填寫聯絡人地址" data-target="form-address" required>
+                            </li>
+                            <li>
+                                <input id="form-mail" type="email" placeholder="請填寫聯絡人信箱" data-type="input" data-default="請填寫聯絡人信箱" data-target="form-mail" required>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="confirm block-noborder">
+                    <h3>基本資料</h3>
+                    <p class="form-name" data-type="output">周星星</p>
+                    <p class="form-tel" data-type="output">0912345678</p>
+                    <p class="form-address" data-type="output">台北市南港區南港路三段110號</p>
+                    <p class="form-mail" data-type="output">abc@abc.com.tw</p>
+                </div>
+            </section>
+            <!-- /.reservation -->
+            <section class="address form" data-name="address">
+                <div class="block">
+                    <form action="">
+                        <ul class="form-box clearfix">
+                            <li class="checkbox clearfix">
+                                <input type="checkbox" />
+                                <label for="" id="form-same-address" data-type="input" data-target="form-service-address" data-src="form-address">
+                                    <p>同基本資料地址</p>
+                                </label>
+                            </li>
+                            <li class="checkbox clearfix">
+                                <input type="checkbox" data-target="common-address" />
+                                <label for="" id="form-common-address" data-type="input">
+                                    <p>常用服務地址<span class="small">(請先登入)</span></p>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="form-select clearfix">
+                            <li id="city">
+                                <h3 data-default="選擇城市">選擇城市</h3>
+                                <ul class="opt">
+                                    <li>台北市</li>
+                                    <li>桃園市</li>
+                                    <li>台北市</li>
+                                    <li>桃園市</li>
+                                    <li>台北市</li>
+                                    <li>桃園市</li>
+                                    <li>台北市</li>
+                                </ul>
+                            </li>
+                            <li id="area" class="rs">
+                                <h3 data-default="選擇區域">選擇區域</h3>
+                                <ul class="opt">
+                                    <li value="01">南港區</li>
+                                    <li value="02">信義區</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="form-text clearfix">
+                            <li>
+                                <input id="form-service-address" type="text" placeholder="請填寫街道地址" data-type="input" data-default="請填寫街道地址" data-target="form-service-address">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="confirm">
+                    <h3>服務地址</h3>
+                    <p class="address"><span class="city required"></span><span class="area required"></span><span class="form-service-address">南港路三段110號</span></p>
+                </div>
+            </section>
+            <section class="count form" data-name="count">
+                <div class="block">
+                    <div class="swiper-container systems">
+                        <div class="swiper-wrapper"></div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="total tab-system">
+                        <ul>
+                        </ul>
+                    </div>
+                    <a class="numerous" href="#">
+                        <span class="title">大量保養</span>
+                        <span class="desc">(超過六台以上)</span>
+                    </a>
+                </div>
+                <div class="confirm">
+                    <h3>清洗數量</h3>
+                    <div class="info">
+                    </div>
+                    <p class="total-price"><span class="title">金額總計：</span><span class="digit">$0</span></p>
+                </div>
+            </section>
+            <section class="appointment form" data-name="appointment">
+                <div class="block">
+                    <div class="swiper-container date">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide date-list">
+                                <p class="day">3/11</p>
+                                <p class="week">星期六</p>
+                            </div>
+                            
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="time">
+                        <div class="day1">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm">
+                    <h3>預約時間</h3>
+                    <p><span class="date">3月14日 星期二</span><span class="time">09:00 - 10:00</span></p>
+                </div>
+            </section>
+            <section class="upload form" data-name="upload">
+                <div class="block">
+                    <div class="sample">
+                        <ul class="clearfix">
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""><span class="info"><img src="img/icon/info.png" alt=""></span></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""><span class="info"><img src="img/icon/info.png" alt=""></span></li>
+                        </ul>
+                        <p>拍攝角度範例</p>
+                    </div>
+                    <div class="uploaded">
+                        <ul class="clearfix">
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="confirm">
+                    <h3>上傳照片</h3>
+                    <ul class="clearfix">
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="others form" data-name="others">
+                <div class="block">
+                    <div class="sample">
+                        <ul class="clearfix">
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""><span class="info"><img src="img/icon/info.png" alt=""></span></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""><span class="info"><img src="img/icon/info.png" alt=""></span></li>
+                        </ul>
+                        <p>拍攝角度範例</p>
+                    </div>
+                    <div class="uploaded">
+                        <ul class="clearfix">
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="confirm">
+                    <h3>上傳照片</h3>
+                    <ul class="clearfix">
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <div class="nextstep">
+            <a class="go-next" href="#">下一步</a>
+        </div>
+    </div>
+    <div class="overlay notice">
+        <div class="frame">
+            <div class="figure"><img src="img/icon/overlay-notice.png" alt=""></div>
+            <div class="content">
+                <h3>小提醒</h3>
+                <p>冰水主機因需考量管線分佈， 需由專業技師現場評估， 請直接與客服聯繫洽詢！</p>
+            </div>
+            <div class="btn-overlay clearfix">
+                <a style="margin-right:1px; border-bottom-left-radius:8px;" href="#">線上客服</a>
+                <a style="margin-left:1px; border-bottom-right-radius:8px;" href="#">致電客服</a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay numerous">
+        <div class="frame">
+            <div class="figure"><img src="img/icon/overlay-notice.png" alt=""></div>
+            <div class="content">
+                <h3>小提醒</h3>
+                <p>您預約清洗的數量超出我的負荷量了！我幫您引導到專屬頁面</p>
+            </div>
+            <div class="btn-overlay clearfix">
+                <a style="width:100%;border-bottom-left-radius:8px;border-bottom-right-radius:8px;" href="#">確定</a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay upload">
+        <div class="frame">
+            <div class="figure"><img src="img/icon/overlay-notice.png" alt=""></div>
+            <div class="content">
+                <img src="img/uploadsample.jpg" alt="">
+                <p class="p1 pa">注意拍照的小技巧，可以讓我們更快了解 施工環境的狀況喔！</p>
+                <p class="p2 pa">冷氣的周圍上 、下、左、右 都要入鏡喔！</p>
+                <p class="p3 pa">冷氣的下方是 否有障礙物！</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

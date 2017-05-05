@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約 安裝服務 &gt; 年高家電管家</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/comm.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div id="install" class="page-inner">
+        <header class="b-center">
+            <h2>預約 安裝服務</h2>
+            <a class="btn-back" href="javascript:window.history.back();"><span></span></a>
+        </header>
+        <nav class="nav-maintain">
+            <ul>
+                <li id="basic" class="active">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-1.png" alt=""></span><span class="text">基本資料</span>
+                    </div>
+                </li>
+                <li id="address">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-2.png" alt=""></span><span class="text">服務地址</span>
+                    </div>
+                </li>
+                <li id="plan">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-9.png" alt=""></span><span class="text">規劃服務</span>
+                    </div>
+                </li>
+                <li id="house">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-7.png" alt=""></span><span class="text">房屋形式</span>
+                    </div>
+                </li>
+                <li id="pattern">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-10.png" alt=""></span><span class="text">房廳數量</span>
+                    </div>
+                </li>
+                <li id="appointment">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-4.png" alt=""></span><span class="text">預約時間</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="home active" data-name="home">
+                <div class="banner">
+                    <img src="img/banner-aircon.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="block" style="position: relative;">
+                        <h3>安裝服務說明</h3>
+                        <p>年高企業提供您完整的<em>空調安裝服務，完整的品牌與機型，親切的服務與價格，更歡迎您免費諮詢</em>，我們將用最完整的規劃經驗與最快的速度提供您全方位的規劃，不管是一般家庭或是公家單位的大型規劃案都難不倒年高。</p>
+                        <p>除了空調外，年高家電管家也能幫您挑選與安裝各式 的家電，不管是要新安裝或是移機拆除，只要是跟家 電與調有關的問題，找年高家電管家就對了！</p>
+                    </div>
+                    <div class="block">
+                        <h3>安裝服務項目</h3>
+                        <ul class="menu-services clearfix always-on">
+                            <li data-optn="service-new">
+                                <div class="icon">
+                                    <img style="left:-1px;top:-1px;" src="img/icon/install-new.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4 class="title">新裝機</h4>
+                                    <p>安裝新的空調設備，包含各機種品牌機型，室內室外機型。從購買到安裝一次搞定。</p>
+                                </div>
+                            </li>
+                            <li data-optn="service-remove">
+                                <div class="icon">
+                                    <img style="left:-1px;top:-1px;" src="img/icon/install-remove.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4 class="title">拆機</h4>
+                                    <p>拆除舊的空調設備，並回收，免除您還要煩惱拆下該怎麼辦的問題。</p>
+                                </div>
+                            </li>
+                            <li data-optn="service-move" data-target="service-move">
+                                <div class="icon">
+                                    <img style="left:-1px;top:-1px;" src="img/icon/install-move.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4 class="title">移機</h4>
+                                    <p>家中的格局改變了嗎？要將空調機器移動裝設的位置，年高專業的經驗來幫您！</p>
+                                </div>
+                            </li>
+                            <li data-optn="service-replace">
+                                <div class="icon">
+                                    <img style="left:-1px;top:-1px;" src="img/icon/install-replace.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4 class="title">舊換新</h4>
+                                    <p>家中的空調不堪使用，需要購置新的設備替換，並協助處理舊的機器。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="basic form" data-name="basic">
+                <div class="block">
+                    <form action="">
+                        <ul class="form-text clearfix">
+                            <li>
+                                <input id="form-name" type="text" placeholder="請填寫聯絡人姓名" data-type="input" data-default="請填寫聯絡人姓名" data-target="form-name" required>
+                            </li>
+                            <li>
+                                <input id="form-tel" type="number" placeholder="請填寫聯絡人電話" data-type="input" data-default="請填寫聯絡人電話" data-target="form-tel" required>
+                            </li>
+                            <li>
+                                <input id="form-address" type="text" placeholder="請填寫聯絡人地址" data-type="input" data-default="請填寫聯絡人地址" data-target="form-address" required>
+                            </li>
+                            <li>
+                                <input id="form-mail" type="email" placeholder="請填寫聯絡人信箱" data-type="input" data-default="請填寫聯絡人信箱" data-target="form-mail" required>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="confirm block-noborder">
+                    <h3>基本資料</h3>
+                    <p class="form-name" data-type="output">周星星</p>
+                    <p class="form-tel" data-type="output">0912345678</p>
+                    <p class="form-address" data-type="output">台北市南港區南港路三段110號</p>
+                    <p class="form-mail" data-type="output">abc@abc.com.tw</p>
+                </div>
+            </section>
+            <!-- /.reservation -->
+            <section class="address form" data-name="address">
+                <div class="block">
+                    <form action="">
+                        <ul class="form-box clearfix">
+                            <li class="checkbox clearfix">
+                                <input type="checkbox" />
+                                <label for="" id="form-same-address" data-type="input" data-target="form-service-address" data-src="form-address" required>
+                                    <p>同基本資料地址</p>
+                                </label>
+                            </li>
+                            <li class="checkbox clearfix">
+                                <input type="checkbox" data-target="common-address" />
+                                <label for="" id="form-common-address" data-type="input">
+                                    <p>常用服務地址<span class="small">(請先登入)</span></p>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="form-select clearfix">
+                            <li id="city">
+                                <h3 data-default="選擇城市">選擇城市</h3>
+                                <ul class="opt">
+                                    <li>台北市</li>
+                                    <li>桃園市</li>
+                                    <li>台北市</li>
+                                    <li>桃園市</li>
+                                    <li>台北市</li>
+                                    <li>桃園市</li>
+                                    <li>台北市</li>
+                                </ul>
+                            </li>
+                            <li id="area" class="rs">
+                                <h3 data-default="選擇區域">選擇區域</h3>
+                                <ul class="opt">
+                                    <li value="01">南港區</li>
+                                    <li value="02">信義區</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="form-text clearfix">
+                            <li>
+                                <input id="form-service-address" type="text" placeholder="請填寫街道地址" data-type="input" data-default="請填寫街道地址" data-target="form-service-address">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="confirm">
+                    <h3>服務地址</h3>
+                    <p class="address"><span class="city required"></span><span class="area required"></span><span class="form-service-address">南港路三段110號</span></p>
+                </div>
+            </section>
+            <section class="plan form" data-name="plan">
+                <div class="block">
+                    <form action="">
+                        <ul class="menu-services clearfix">
+                            <li class="service-new" data-optn="service-new">
+                                <div class="icon">
+                                    <img style="left:-1px;top:-1px;" src="img/icon/install-new.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4>新裝機</h4>
+                                </div>
+                            </li>
+                            <li class="service-remove" data-optn="service-remove">
+                                <div class="icon">
+                                    <img style="left:-1px;top:-1px;" src="img/icon/install-remove.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4>拆機</h4>
+                                </div>
+                            </li>
+                            <li class="service-move" data-optn="service-move">
+                                <div class="icon">
+                                    <img style="left:-1px;top:-1px;" src="img/icon/install-move.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4>移機</h4>
+                                </div>
+                            </li>
+                            <li class="service-replace" data-optn="service-replace">
+                                <div class="icon">
+                                    <img style="left:-1px;top:-1px;" src="img/icon/install-replace.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4>舊換新</h4>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="issue-statement">
+                            <textarea data-type="input" placeholder="有其他補充也可以詳細告訴我們噢" data-default="" name="" id="plan-desc" data-target="plan-desc" cols="30" rows="12"></textarea>
+                            <span class="figure"><img src="img/icon/form-figure.png" alt=""></span>
+                        </div>
+                        <div class="form-box clearfix">
+                            <div class="checkbox clearfix">
+                                <input type="checkbox" />
+                                <label for="" id="form-agreement" data-type="input" data-target="form-agreement" required>
+                                    <p>閱讀服務條款</p>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="confirm">
+                    <h3>房屋形式</h3>
+                    <p class="house-type required">選擇形式</p>
+                    <p class="house-floor required">選擇樓層</p>
+                    <p class="house-desc optional"></p>
+                </div>
+            </section>
+            <section class="house form" data-name="house">
+                <div class="block">
+                    <form action="">
+                        <ul class="form-select clearfix">
+                            <li data-default="選擇形式" id="house-type">
+                                <h3>選擇形式</h3>
+                                <ul class="opt">
+                                    <li>樓梯式</li>
+                                    <li>電梯式</li>
+                                </ul>
+                            </li>
+                            <li data-default="選擇樓層" id="house-floor" class="rs">
+                                <h3>選擇樓層</h3>
+                                <ul class="opt">
+                                    <li>99F</li>
+                                    <li>100F</li>
+                                    <li>101F</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="issue-statement">
+                            <textarea data-type="input" placeholder="有其他補充也可以詳細告訴我們噢" data-default="" name="" id="house-desc" data-target="house-desc" cols="30" rows="10"></textarea>
+                            <span class="figure"><img src="img/icon/form-figure.png" alt=""></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="confirm">
+                    <h3>房屋形式</h3>
+                    <p class="house-type required">選擇形式</p>
+                    <p class="house-floor required">選擇樓層</p>
+                    <p class="house-desc optional"></p>
+                </div>
+            </section>
+            <section class="pattern form" data-name="pattern">
+                <div class="block">
+                    <div class="selection">
+                        <ul class="tab-btn" data-tab-target="pattern">
+                            <li data-name="hall">廳</li>
+                            <li data-name="room">房</li>
+                        </ul>
+                    </div>
+                    <div class="total tab-pattern">
+                        <ul>
+                            <li class="item-list clearfix" data-name="hall">
+                                <div class="quantity">
+                                    <button class="btn-add changeNum">+</button>
+                                    <input type="input" value="0" data-price="1000" data-name="hall">
+                                    <button class="btn-minus changeNum">-</button>
+                                    <span class="quantifier">台</span>
+                                </div>
+                                <p class="price"><span class="title">金額：</span><span class="digit">0</span></p>
+                            </li><li class="item-list clearfix" data-name="room">
+                                <div class="quantity">
+                                    <button class="btn-add changeNum">+</button>
+                                    <input type="input" value="0" data-price="1000" data-name="room">
+                                    <button class="btn-minus changeNum">-</button>
+                                    <span class="quantifier">台</span>
+                                </div>
+                            </li>
+                            <li class="total-room clearfix active"><span class="title">總計：</span><span class="hall">0</span> 廳，<span class="room">1</span> 房</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="appointment form" data-name="appointment">
+                <div class="block">
+                    <div class="swiper-container date">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide date-list">
+                                <p class="day">3/11</p>
+                                <p class="week">星期六</p>
+                            </div>
+                            
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="time">
+                        <div class="day1">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm">
+                    <h3>預約時間</h3>
+                    <p><span class="date">3月14日 星期二</span><span class="time">09:00 - 10:00</span></p>
+                </div>
+            </section>
+        </main>
+        <div class="nextstep">
+            <a class="go-next" href="#">下一步</a>
+        </div>
+    </div>
+</body>
+
+</html>

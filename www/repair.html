@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約 維修服務 &gt; 年高家電管家</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/comm.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="repair" class="page-inner">
+        <header class="b-center">
+            <h2>預約 維修服務</h2>
+            <a class="btn-back" href="javascript:window.history.back();"><span></span></a>
+        </header>
+        <nav class="nav-maintain">
+            <ul>
+                <li id="basic" class="active">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-1.png" alt=""></span><span class="text">基本資料</span>
+                    </div>
+                </li>
+                <li id="address">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-2.png" alt=""></span><span class="text">服務地址</span>
+                    </div>
+                </li>
+                <li id="house">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-7.png" alt=""></span><span class="text">房屋形式</span>
+                    </div>
+                </li>
+                <li id="malformed">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-8.png" alt=""></span><span class="text">異常狀況</span>
+                    </div>
+                </li>
+                <li id="appointment">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-4.png" alt=""></span><span class="text">預約時間</span>
+                    </div>
+                </li>
+                <li id="upload">
+                    <div class="wrap">
+                        <span class="icon"><img src="img/icon/sidebar-5.png" alt=""></span><span class="text">上傳照片</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="home active">
+                <h3 class="title">異常狀況</h3>
+                <div class="machine">
+                    <img src="img/machine/aircon.png" alt="">
+                    <ul class="parts issues">
+                        <li class="up" data-optn="temp">
+                            <div class="icon"></div>
+                            <div class="text">溫度異常</div>
+                        </li>
+                        <li class="up" data-optn="noise">
+                            <div class="icon"></div>
+                            <div class="text">有異音</div>
+                        </li>
+                        <li class="dn" data-optn="leak1">
+                            <div class="icon"></div>
+                            <div class="text">出風口漏水</div>
+                        </li>
+                        <li class="dn" data-optn="start">
+                            <div class="icon"></div>
+                            <div class="text">無法開機</div>
+                        </li>
+                        <li class="dn" data-optn="leak2">
+                            <div class="icon"></div>
+                            <div class="text">排水管漏水</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="basic form" data-name="basic">
+                <div class="block">
+                    <form action="">
+                        <ul class="form-text clearfix">
+                            <li>
+                                <input id="form-name" type="text" placeholder="請填寫聯絡人姓名" data-type="input" data-default="請填寫聯絡人姓名" data-target="form-name">
+                            </li>
+                            <li>
+                                <input id="form-tel" type="text" placeholder="請填寫聯絡人電話" data-type="input" data-default="請填寫聯絡人電話" data-target="form-tel">
+                            </li>
+                            <li>
+                                <input id="form-address" type="text" placeholder="請填寫聯絡人地址" data-type="input" data-default="請填寫聯絡人地址" data-target="form-address">
+                            </li>
+                            <li>
+                                <input id="form-mail" type="text" placeholder="請填寫聯絡人信箱" data-type="input" data-default="請填寫聯絡人信箱" data-target="form-mail">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="confirm block-noborder">
+                    <h3>基本資料</h3>
+                    <p class="form-name" data-type="output">周星星</p>
+                    <p class="form-tel" data-type="output">0912345678</p>
+                    <p class="form-address" data-type="output">台北市南港區南港路三段110號</p>
+                    <p class="form-mail" data-type="output">abc@abc.com.tw</p>
+                </div>
+            </section>
+            <section class="address form" data-name="address">
+                <div class="block">
+                    <form action="">
+                        <ul class="form-box clearfix">
+                            <li class="checkbox clearfix">
+                                <input type="checkbox" />
+                                <label for="" id="form-same-address" data-type="input" data-target="form-service-address" data-src="form-address">
+                                    <p>同基本資料地址</p>
+                                </label>
+                            </li>
+                            <li class="checkbox clearfix">
+                                <input type="checkbox" data-target="common-address" />
+                                <label for="" id="form-common-address" data-type="input">
+                                    <p>常用服務地址<span class="small">(請先登入)</span></p>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="form-select clearfix">
+                            <li id="city">
+                                <h3 data-default="選擇城市">選擇城市</h3>
+                                <ul class="opt">
+                                    <li>台北市</li>
+                                    <li>桃園市</li>
+                                    <li>台北市</li>
+                                    <li>桃園市</li>
+                                    <li>台北市</li>
+                                    <li>桃園市</li>
+                                    <li>台北市</li>
+                                </ul>
+                            </li>
+                            <li id="area" class="rs">
+                                <h3 data-default="選擇區域">選擇區域</h3>
+                                <ul class="opt">
+                                    <li value="01">南港區</li>
+                                    <li value="02">信義區</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="form-text clearfix">
+                            <li>
+                                <input id="form-service-address" type="text" placeholder="請填寫街道地址" data-type="input" data-default="請填寫街道地址" data-target="form-service-address">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="confirm">
+                    <h3>服務地址</h3>
+                    <p class="address"><span class="city required"></span><span class="area required"></span><span class="form-service-address">南港路三段110號</span></p>
+                </div>
+            </section>
+            <section class="house form" data-name="house">
+                <div class="block">
+                    <form action="">
+                        <ul class="form-select clearfix">
+                            <li data-default="選擇形式" id="house-type">
+                                <h3>選擇形式</h3>
+                                <ul class="opt">
+                                    <li class="optn-stair" data-target="">樓梯式</li>
+                                    <li class="optn-elev">電梯式</li>
+                                </ul>
+                            </li>
+                            <li data-default="選擇樓層" id="house-floor" class="rs">
+                                <h3>選擇樓層</h3>
+                                <ul class="opt">
+                                    <li>99F</li>
+                                    <li>100F</li>
+                                    <li>101F</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="issue-statement">
+                            <textarea data-type="input" placeholder="有其他補充也可以詳細告訴我們噢" data-default="" name="" id="house-desc" data-target="house-desc" cols="30" rows="10"></textarea>
+                            <span class="figure"><img src="img/icon/form-figure.png" alt=""></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="confirm">
+                    <h3>房屋形式</h3>
+                    <p class="house-type required">選擇形式</p>
+                    <p class="house-floor required">選擇樓層</p>
+                    <p class="house-desc optional"></p>
+                </div>
+            </section>
+            <section class="malformed form" data-name="malformed">
+                <div class="block">
+                    <div class="selection clearfix">
+                        <ul class="tab-btn issues">
+                            <li data-optn="temp"><a href="javascript:void(0)">溫度異常</a></li>
+                            <li data-optn="leak2"><a href="javascript:void(0)">排水管漏水</a></li>
+                            <li data-optn="leak1"><a href="javascript:void(0)">出風口漏水</a></li>
+                            <li data-optn="start"><a href="javascript:void(0)">無法開機</a></li>
+                            <li data-optn="noise"><a href="javascript:void(0)">有異音</a></li>
+                        </ul>
+                        <div class="issue-statement">
+                            <textarea data-type="input" placeholder="有其他補充也可以詳細告訴我們噢" data-default="" name="" id="house-desc" cols="30" rows="10"></textarea>
+                            <span class="figure"><img src="img/icon/form-figure.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="appointment form" data-name="appointment">
+                <div class="block">
+                    <div class="swiper-container date">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide date-list">
+                                <p class="day">3/11</p>
+                                <p class="week">星期六</p>
+                            </div>
+                            
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="time">
+                        <div class="day1">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm">
+                    <h3>預約時間</h3>
+                    <p><span class="date">請選擇預約時間</span><span class="time"></span></p>
+                </div>
+            </section>
+            <section class="upload form" data-name="upload">
+                <div class="block">
+                    <div class="sample">
+                        <ul class="clearfix">
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""><span class="info"><img src="img/icon/info.png" alt=""></span></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""><span class="info"><img src="img/icon/info.png" alt=""></span></li>
+                        </ul>
+                        <p>拍攝角度範例</p>
+                    </div>
+                    <div class="uploaded">
+                        <ul class="clearfix">
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                            <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="confirm">
+                    <h3>上傳照片</h3>
+                    <ul class="clearfix">
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                        <li><img src="http://fakeimg.pl/800x800/" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <div class="nextstep">
+            <a class="go-next" href="#">下一步</a>
+        </div>
+    </div>
+</body>
+
+</html>
